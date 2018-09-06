@@ -30,7 +30,6 @@ public class Player {
         return money;
     }
 
-
     public ArrayList<PrivateProperty> getProperties() {
         return properties;
     }
