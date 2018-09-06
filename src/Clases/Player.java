@@ -8,7 +8,7 @@ public class Player {
     private Integer money;
     private ArrayList<PrivateProperty> properties;
     private Boolean inPrison;
-    private Integer doublesCount;
+
 
     public Player( Boolean inPrison, Integer doublesCount) {
         Xaxis = 1;
@@ -16,6 +16,36 @@ public class Player {
         this.money = 500;
         this.properties = new ArrayList<PrivateProperty>();
         this.inPrison = false;
-        this.doublesCount = 0%4;
     }
+
+    public Integer getXaxis() {
+        return Xaxis;
+    }
+
+    public Integer getYaxis() {
+        return Yaxis;
+    }
+
+    public Integer getMoney() {
+        return money;
+    }
+
+
+    public ArrayList<PrivateProperty> getProperties() {
+        return properties;
+    }
+
+    public void addProperty(PrivateProperty property) {
+        this.properties.add(property);
+    }
+
+    public Boolean getInPrison() {
+        return inPrison;
+    }
+
+    public void changePrisonState ( ) {
+        if(!this.inPrison) {
+            this.inPrison = true;
+        } else {this.inPrison = false;}
+    } //Cambia el estado de inPrison.
 }

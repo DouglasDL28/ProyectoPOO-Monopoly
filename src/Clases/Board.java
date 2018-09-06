@@ -28,9 +28,7 @@ public class Board {
         } else {this.PlayerOneTurn = true;}
     }
 
-    public Integer checkDoubles (Player player) {
-        
-    }
+    public Integer checkDoubles (Player player) { }
 
     public ArrayList<Player> getPlayers() {
         return players;
