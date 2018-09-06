@@ -21,8 +21,26 @@ public class Board {
         Width = width;
         this.freeCells = new ArrayList<PrivateProperty>();
     }
-
-
+    private boolean hasWinner(){
+        boolean hasWinner=false;
+        for (Player player : players){
+            if(player.getMoney()==0){
+                hasWinner=true;
+            }
+        }
+        return hasWinner;
+    }
+    public Player getWinner(){
+        Player winner;
+        if (this.hasWinner()){
+            for (Player player : players){
+                if(player.getMoney()==0){
+                    winner=player;
+                }
+            }
+        }
+        return winner;
+    }
     public void changeTurn () {
         if (PlayerOneTurn) {
             this.PlayerOneTurn = false;
