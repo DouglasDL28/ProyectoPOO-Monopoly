@@ -5,7 +5,6 @@ import java.util.Random;
 public class Dice {
     //Clase dado
     private int[] numbers = new int [6];
-
     public Dice() {
         this.numbers[0]=1;
         this.numbers[1]=2;
