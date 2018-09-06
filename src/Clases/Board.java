@@ -1,4 +1,5 @@
 package Clases;
+import java.awt.*;
 import java.util.ArrayList;
 
 public class Board {
@@ -27,8 +28,6 @@ public class Board {
             this.PlayerOneTurn = false;
         } else {this.PlayerOneTurn = true;}
     }
-
-    public Integer checkDoubles (Player player) { }
 
     public ArrayList<Player> getPlayers() {
         return players;
