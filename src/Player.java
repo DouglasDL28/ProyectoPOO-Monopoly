@@ -1,6 +1,6 @@
 package Clases;
 
-import Clases.Properties.PrivateProperty;
+import Clases.Property.PrivateProperty;
 
 import java.util.ArrayList;
 
