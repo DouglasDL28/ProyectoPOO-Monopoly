@@ -29,19 +29,6 @@ public class Board {
         } else {this.PlayerOneTurn = true;}
     }
 
-    public Integer checkDoubles (Player player) {
-        
-    }
-    public boolean hasWinner(){
-        boolean hasWinner=false;
-        for(Player player : players){
-            if (player.getMoney==0){
-                hasWinner= true;
-            }
-        }
-        return hasWinner;
-    }
-
     public ArrayList<Player> getPlayers() {
         return players;
     }
