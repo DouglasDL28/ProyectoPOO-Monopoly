@@ -1,9 +1,4 @@
 package Clases;
-
-
-import Clases.Property.PrivateProperty;
-import Clases.Property.Property;
-
 import java.util.ArrayList;
 
 public class Board {

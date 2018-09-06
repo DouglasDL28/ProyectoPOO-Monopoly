@@ -1,7 +1,5 @@
 package Clases;
 
-import Clases.Property.PrivateProperty;
-
 import java.util.ArrayList;
 
 public class Player {
