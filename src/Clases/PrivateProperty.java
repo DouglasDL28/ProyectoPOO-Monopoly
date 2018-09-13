@@ -12,7 +12,16 @@ public class PrivateProperty extends Property {
         BuyingPrice = buyingPrice;
         StayingPrice = stayingPrice;
     }
-    public void buyHouse(){
+    public void buy(){
         this.isBought=true;
     }
+
+    public void mortgage () {}
+
+    public void sell () {}
+
+    public void buyHouse () {}
+
+    public void buyHoutel () { }
+
 }
