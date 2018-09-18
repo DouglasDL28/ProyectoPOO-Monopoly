@@ -4,7 +4,7 @@ public class PrivateProperty extends Property {
     private String Color;
     private int BuyingPrice;
     private int StayingPrice;
-    private Boolean isBought= false;
+    private Boolean Owned = false;
 
     public PrivateProperty(String name, int x, int y, String color, int buyingPrice, int stayingPrice) {
         super(name, x, y);
@@ -18,10 +18,10 @@ public class PrivateProperty extends Property {
 
     public void mortgage () {}
 
-    public void sell () {}
+    public void sell () { }
 
     public void buyHouse () {}
 
-    public void buyHoutel () { }
+    public void buyHotel () { }
 
 }

@@ -36,11 +36,11 @@ public class Player {
 
     public void addProperty(PrivateProperty property) {
         this.properties.add(property);
-    }
+    } //Agrega una propiedad a la lista de propiedades del jugador.
 
     public Boolean getInPrison() {
         return inPrison;
-    }
+    } //Cambia el estado a que sí esté en la prisión
 
     public void changePrisonState ( ) {
         if(!this.inPrison) {

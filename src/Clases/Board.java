@@ -49,11 +49,11 @@ public class Board {
 
     public ArrayList<Player> getPlayers() {
         return players;
-    }
+    } //Obtener los jugadores.
 
     public ArrayList<Property> getCells() {
         return cells;
-    }
+    } //Obtener las prop
 
     public void setCells(ArrayList<Property> cells) {
         this.cells = cells;
@@ -71,25 +71,20 @@ public class Board {
         return PlayerOneTurn;
     }
 
-    public void setPlayerOneTurn(Boolean playerOneTurn) {
-        PlayerOneTurn = playerOneTurn;
-    }
-
     public Integer getHeight() {
         return Height;
-    }
-
-
+    } // Obtener la altura de el tablero
 
     public Integer getWidth() {
         return Width;
-    }
+    } // Obtener el ancho del tablero.
 
     public ArrayList<PrivateProperty> getFreeCells() {
         return freeCells;
     }
 
-    public void setFreeCells(ArrayList<PrivateProperty> freeCells) {
-        this.freeCells = freeCells;
+    public void buyProperty (PrivateProperty property, Player player) {
+        if (this.freeCells.count() > 0) {freeCells.remove(property)
+        player.addProperty(property)}
     }
 }
