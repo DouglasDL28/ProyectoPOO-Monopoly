@@ -10,7 +10,7 @@ public class Player {
     private Boolean inPrison;
 
 
-    public Player( Boolean inPrison, Integer doublesCount) {
+    public Player() {
         Xaxis = 1;
         Yaxis = 1;
         this.money = 500;
@@ -48,3 +48,5 @@ public class Player {
         } else {this.inPrison = false;}
     } //Cambia el estado de inPrison.
 }
+
+

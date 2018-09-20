@@ -10,41 +10,48 @@ public class Board {
     private Integer Height;
     private Integer Width;
     private ArrayList<PrivateProperty> freeCells;
+    private Dice dice;
 
 
-    public Board(Integer bank, Integer height, Integer width) {
+    public Board() {
         this.players = new ArrayList<Player>();
         this.cells = new ArrayList<Property>();
-        this.bank = bank;
+        this.bank = 1000;
         PlayerOneTurn = true;
-        Height = height;
-        Width = width;
+        Height = 11;
+        Width = 11;
         this.freeCells = new ArrayList<PrivateProperty>();
-    }
-    private boolean hasWinner(){
-        boolean hasWinner=false;
-        for (Player player : players){
-            if(player.getMoney()==0){
-                hasWinner=true;
+        this.dice = new Dice();
+    } //Constructor
+
+    private boolean hasWinner() {
+        boolean hasWinner = false;
+        for (Player player : players) {
+            if (player.getMoney() == 0) {
+                hasWinner = true;
             }
         }
         return hasWinner;
     }
-    public Player getWinner(){
+
+    public Player getWinner() {
         Player winner;
-        if (this.hasWinner()){
-            for (Player player : players){
-                if(player.getMoney()==0){
-                    winner=player;
+        if (this.hasWinner()) {
+            for (Player player : players) {
+                if (player.getMoney() == 0) {
+                    winner = player;
                 }
             }
         }
         return winner;
     }
-    public void changeTurn () {
+
+    public void changeTurn() {
         if (PlayerOneTurn) {
             this.PlayerOneTurn = false;
-        } else {this.PlayerOneTurn = true;}
+        } else {
+            this.PlayerOneTurn = true;
+        }
     }
 
     public ArrayList<Player> getPlayers() {
@@ -73,18 +80,27 @@ public class Board {
 
     public Integer getHeight() {
         return Height;
-    } // Obtener la altura de el tablero
+    } //Obtener la altura de el tablero
 
     public Integer getWidth() {
         return Width;
-    } // Obtener el ancho del tablero.
+    } //Obtener el ancho del tablero.
 
     public ArrayList<PrivateProperty> getFreeCells() {
         return freeCells;
     }
 
-    public void buyProperty (PrivateProperty property, Player player) {
-        if (this.freeCells.count() > 0) {freeCells.remove(property)
-        player.addProperty(property)}
+    public void buyProperty(PrivateProperty property, Player player) {
+        if (this.freeCells.size() > 0) {
+            freeCells.remove(property);
+            player.addProperty(property)
+        }
     }
+
+    public void move (Player player, Integer dice) {
+        for(0..dice) {
+            if (player.getX()<11) {}
+        }
+    }
+
 }
