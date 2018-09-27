@@ -97,10 +97,6 @@ public class Board {
         }
     }
 
-    public void move (Player player, Integer dice) {
-        for(0..dice) {
-            if (player.getX()<11) {}
-        }
-    }
+
 
 }
